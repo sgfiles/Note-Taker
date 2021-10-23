@@ -24,7 +24,7 @@ This app is licensed with MIT.
 ![note-taker 3](https://user-images.githubusercontent.com/72025703/138540984-8cdba720-4777-4bd7-9d08-c5fcf73bce4f.JPG)
 
 # Deployed
-Deployed Link: https://github.com/sgfiles/Note-Taker
+Deployed Link: https://sheralyns-note-taker.herokuapp.com/
 
 ## Email
 Questions about this project may be directed here.
