@@ -10,7 +10,7 @@ router.get('/notes', (req, res) => {
     readFromFile('./db/db.json').then((data) => res.json(JSON.parse(data)));
   });
 
-// POSt to submit a not
+// POSt to submit a note
 router.post('/notes', (req, res) => {
     const {title, text} = req.body;
 
@@ -18,12 +18,15 @@ router.post('/notes', (req, res) => {
         const newNote = {
             title, text, id: uuid(),
         };
-    }
         readAndAppend(newNote, './db/db.json');
         res.json('Note added');
-     
-    
-  
-})
+    }else { 
+        res.error('Error');
+    }
+});
 
+router.delete('/notes/:id', (req, res) => {
+    console.log(req.params.id);
+    deleteNote(req.params.id, './db/db.json');
+})
 module.exports = router;

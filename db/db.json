@@ -1,3 +1,17 @@
 [
-    
+    {
+        "title": "Hello",
+        "text": "Hello",
+        "id": "aeeb"
+    },
+    {
+        "title": "Satureday",
+        "text": "Take trash out\n",
+        "id": "ffd2"
+    },
+    {
+        "title": "Homework",
+        "text": "Due Friday\n",
+        "id": "35ef"
+    }
 ]
